@@ -7,3 +7,5 @@ SQLite w ramach projektu na Gradle (build.gradle) [ link do obrazu](https://hub.
 ✅ 4.5 stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji   
 przez CMD oraz gradle [Tekst wyświetlany](https://hub.docker.com/r/przemyslawwlazly/hello-app)  
 ❌ 5.0 dodać konfigurację docker-compose  
+
+[link do zadania 1](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_1/docker-project)  

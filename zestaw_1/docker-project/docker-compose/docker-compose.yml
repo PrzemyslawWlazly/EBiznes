@@ -1,0 +1,15 @@
+version: '3.8'       # Wersja składni docker-compose. 3.8 jest kompatybilna z nowszymi Dockerami.
+
+services:             # Sekcja definiująca wszystkie usługi, czyli kontenery, które chcemy uruchomić.
+
+  python:             # Nazwa usługi "python" – będzie kontenerem z Pythonem 3.10
+    image: twoj_login/python310  # Obraz Docker używany dla tej usługi. Zastąp 'twoj_login' swoim loginem na Docker Hub
+
+  java:               # Nazwa usługi "java" – kontener z Javą 8 + Kotlinem
+    image: twoj_login/java-kotlin  # Obraz Docker używany dla tej usługi
+
+  gradle:             # Nazwa usługi "gradle" – kontener z Gradle i SQLite (dla punktu 3)
+    image: twoj_login/gradle-sqlite  # Obraz Docker używany dla tej usługi
+
+  app:                # Nazwa usługi "app" – kontener z aplikacją Hello World
+    image: twoj_login/hello-app  # Obraz Docker używany dla tej usługi

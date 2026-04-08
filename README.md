@@ -9,3 +9,24 @@ przez CMD oraz gradle [link do obrazu](https://hub.docker.com/r/przemyslawwlazly
 ❌ 5.0 dodać konfigurację docker-compose  
 
 [link do zadania 1](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_1/docker-project)  
+
+
+-----------------------------------------
+Zadanie 2 
+
+Należy stworzyć aplikację na frameworku Play lub Scalatra.
+
+✅ 3.0 Należy stworzyć kontroler do Produktów [ link do obrazu](https://hub.docker.com/r/przemyslawwlazly/python310)  
+✅ 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
+pobierane z listy
+✅ 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy
+zgodnie z CRUD
+❌ 4.5 (problem z ngrok) Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać
+skrypt uruchamiający aplikację via ngrok
+✅ 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
+
+
+[link do zadania 2](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_1/docker-project)  
+
+
+-----------------------------------------

@@ -34,15 +34,18 @@ Należy stworzyć aplikację na frameworku Play lub Scalatra. Projekt zrealizowa
 
 Zadanie 3 Kotlin
 
-✅ 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor,
-która pozwala na przesyłanie wiadomości na platformę Discord
-✅ 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z
-platformy Discord skierowane do aplikacji (bota)
+[Link do głównego folderu zadania 3](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_3)
 
-✅ 4.0 Zwróci listę kategorii na określone żądanie użytkownika
+✅ **3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku, która pozwala na przesyłanie wiadomości na platformę Discord** [link do obrazu na Docker Hub](https://hub.docker.com/r/przemyslawwlazly/ebiznes-discord-bot) | [kod rozwiązania: Main.kt](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_3/src/main/kotlin/pl/ebiznes/discordbot/Main.kt), [Dockerfile](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_3/Dockerfile)
 
-✅ 4.5 Zwróci listę produktów wg żądanej kategorii
+✅ **3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota)** [link do obrazu na Docker Hub](https://hub.docker.com/r/przemyslawwlazly/ebiznes-discord-bot) | [kod rozwiązania: Main.kt](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_3/src/main/kotlin/pl/ebiznes/discordbot/Main.kt)
 
-❌ 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack lub Messenger
+✅ **4.0 Zwróci listę kategorii na określone żądanie użytkownika** [link do obrazu na Docker Hub](https://hub.docker.com/r/przemyslawwlazly/ebiznes-discord-bot) | [kod rozwiązania: Main.kt](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_3/src/main/kotlin/pl/ebiznes/discordbot/Main.kt)
+
+✅ **4.5 Zwróci listę produktów wg żądanej kategorii** [link do obrazu na Docker Hub](https://hub.docker.com/r/przemyslawwlazly/ebiznes-discord-bot) | [kod rozwiązania: Main.kt](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_3/src/main/kotlin/pl/ebiznes/discordbot/Main.kt)
+
+❌ **5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack lub Messenger** *(nie zrealizowano)*
+
+
 
 -----------------------------------------

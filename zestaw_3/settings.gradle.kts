@@ -1,0 +1,1 @@
+rootProject.name = "discord-bot" // Ustawia główną nazwę naszego projektu na "discord-bot", co wpłynie m.in. na nazwę pliku wykonywalnego

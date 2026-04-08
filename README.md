@@ -14,11 +14,7 @@ przez CMD oraz gradle [link do obrazu](https://hub.docker.com/r/przemyslawwlazly
 -----------------------------------------
 Zadanie 2 
 
-# Projekt E-biznes - Zestaw 2 (Scalatra)
-
 [Link do głównego folderu zadania 2](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_2)
-
-## Realizacja zadań
 
 Należy stworzyć aplikację na frameworku Play lub Scalatra. Projekt zrealizowano przy użyciu frameworka **Scalatra**.
 

@@ -92,8 +92,8 @@ Zadanie 5
 
 
 
+[EBiznes_zestaw5.webm](https://github.com/user-attachments/assets/d96a3c2c-6581-4abd-a75c-ff8f781f137d)
 
-[zestaw5.webm](https://github.com/user-attachments/assets/147207fc-ac36-4cb1-b5bc-7f114b63bda8)
 
 
 -----------------------

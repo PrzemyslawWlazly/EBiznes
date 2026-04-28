@@ -1,0 +1,12 @@
+version: '3.8' # Wskazujemy silnikowi wersję 3.8 składni deklaratywnej konfiguracji, co gwarantuje nam dostęp do nowoczesnych funkcji Compose
+services: # Rozpoczynamy główny węzeł YAML w którym opiszemy wszystkie nasze pracujące aplikacje
+  backend: # Deklarujemy nazwę dla pierwszej wirtualnej maszyny (kontenera) powiązanego z aplikacją Go
+    build: ./backend # Informujemy Dockera, by szukał pliku Dockerfile w folderze obok ("./backend") i zbudował go od zera
+    ports: # Otwieramy tablicę konfiguracji połączeń sieciowych
+      - "8080:8080" # Mapujemy fizyczny port "8080" z Twojego systemu Ubuntu do portu "8080" izolowanego środowiska kontenera
+  frontend: # Definiujemy drugą maszynę dla naszej aplikacji w bibliotece React
+    build: ./frontend # Przekierowujemy silnik budujący do wewnątrz folderu frontend po odpowiedni Dockerfile
+    ports: # Tablica portów dla tej sekcji
+      - "3000:3000" # Wystawiamy port "3000" z wirtualnej sieci, byś mógł wejść w przeglądarkę na "localhost:3000"
+    depends_on: # Słowo kluczowe ustawiające kolejność budowania i włączania systemów
+      - backend # Nakazujemy systemowi wstrzymanie włączenia "frontendu" dopóki kontener z "backendem" nie odpali się jako pierwszy

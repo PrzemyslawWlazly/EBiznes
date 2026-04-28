@@ -1,0 +1,2 @@
+module esy-floresy-backend // Definiujemy unikalną nazwę dla głównego modułu naszej aplikacji serwerowej
+go 1.20 // Określamy wymaganą, minimalną wersję kompilatora języka Go do uruchomienia tego kodu (1.20 to stabilny wybór)

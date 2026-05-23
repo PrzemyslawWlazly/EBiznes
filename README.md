@@ -97,7 +97,37 @@ Zadanie 5
 
 
 -----------------------
+Zadanie 6
 
+# Zadanie 6 Testy
+
+✅ **3.0** W ramach projektu stworzono 20 zautomatyzowanych przypadków testowych end-to-end (E2E) w technologii CypressJS. Wszystkie scenariusze testowe weryfikujące interakcje użytkownika z aplikacją znajdują się w pliku [shop.cy.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_6/frontend/cypress/e2e/shop.cy.js).
+
+✅ **3.5** Rozszerzono testy funkcjonalne E2E w pliku [shop.cy.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_6/frontend/cypress/e2e/shop.cy.js) poprzez zastosowanie zaawansowanego łańcuchowania metod weryfikujących (`.should()` oraz `.and()`), dzięki czemu cały zestaw zawiera łącznie ponad 50 asercji.
+
+
+
+
+[Ebiznes_zest6_35.webm](https://github.com/user-attachments/assets/698d4de8-bc09-46db-b398-856e3f053326)
+
+
+✅ **4.0** Stworzono zestaw testów jednostkowych (Unit Tests) dla komponentów frontendu w React przy użyciu bibliotek Jest oraz React Testing Library. Testy izolowanych komponentów oraz logiki biznesowej zawierają ponad 50 asercji i są umieszczone w pliku [AppUnit.test.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_6/frontend/src/AppUnit.test.js).
+
+[Ebiznes_zest6_40.webm](https://github.com/user-attachments/assets/899dd9e7-1eeb-465e-89c4-b35a1181bb31)
+
+
+
+✅ **4.5** Dodano zautomatyzowane testy API zaimplementowane w Cypressie, które pokrywają wszystkie endpointy aplikacji serwerowej Go (`GET /api/products` oraz `POST /api/payments`). Zgodnie z wymaganiami, każdy endpoint został pokryty scenariuszem pozytywnym oraz minimum jednym scenariuszem negatywnym (obsługa kodów błędów 404 i 405) w pliku [api.cy.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_6/frontend/cypress/e2e/api.cy.js).
+- [Link do obrazu Frontend](https://hub.docker.com/r/przemyslawwlazly/zestaw-6-frontend)
+- [Link do obrazu Backend](https://hub.docker.com/r/przemyslawwlazly/zestaw-6-backend)
+
+- 
+[EBiznes_zest6_45.webm](https://github.com/user-attachments/assets/48b90991-4073-42a4-a40e-16e49c4e330b)
+
+
+❌ **5.0** Testy funkcjonalne nie zostały uruchomione na chmurowej platformie BrowserStack.
+
+[Link do całego zadania 6](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_6)
 
 
 -----------------------------------------

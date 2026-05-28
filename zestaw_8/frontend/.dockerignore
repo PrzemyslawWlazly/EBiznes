@@ -1,0 +1,3 @@
+node_modules # Rozkazujemy silnikowi budującemu Dockera, aby ignorował nasz lokalny folder ze starymi paczkami NPM podczas kopiowania (zrobi to sam w kroku instalacji)
+build # Ignorujemy katalog z produkcyjną wersją build (jeśli taki istnieje na dysku)
+.git # Ignorujemy historię repozytorium git, by odchudzić rozmiar obrazu dockera w MB

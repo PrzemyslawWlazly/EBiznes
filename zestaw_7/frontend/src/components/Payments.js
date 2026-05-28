@@ -60,9 +60,10 @@ function Payments() {
       {/* Podłączamy naszą funkcję handlePayment do zdarzenia onSubmit całego formularza */}
       <form onSubmit={handlePayment}>
         <div>
-          <label>Przekaż goblinom kwotę: </label>
-          {/* Pole input połączone z naszym stanem lokalnym "amount" */}
+        {/* POPRAWKA DLA SONARCLOUD: Powiązanie etykiety z polem input dla czytników ekranu */}
+        <label htmlFor="amountInput">Przekaż goblinom kwotę: </label>
           <input 
+            id="amountInput"
             type="number" 
             step="0.01" 
             value={amount} 

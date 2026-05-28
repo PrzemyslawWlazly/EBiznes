@@ -160,7 +160,34 @@ Zadanie 6
 
 
 -----------------------------------------
+# Zadanie 8 Uwierzytelnianie i OAuth2
 
+✅ **3.0** Zaimplementowano tradycyjny system logowania. Stworzono komponent [Login.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/frontend/src/components/Login.js) po stronie frontendu, który komunikuje się z dedykowanym endpointem `/api/login` zdefiniowanym w pliku głównym serwera [main.go](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/backend/main.go).
+
+✅ **3.5** Zaimplementowano tradycyjny system rejestracji użytkowników. Dodano komponent [Register.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/frontend/src/components/Register.js), który przesyła dane do serwera, gdzie są one bezpiecznie szyfrowane i zapisywane w lokalnej bazie SQLite.
+
+
+[EBiznes_zest_8_35.webm](https://github.com/user-attachments/assets/bf062fa6-70ec-436b-8c61-07490ace8442)
+
+
+
+
+✅ **4.0** Wprowadzono możliwość logowania za pomocą konta **Google OAuth2**. Logika autoryzacji oraz wymiany tokenów została zaimplementowana bezpiecznie po stronie backendu w dedykowanym pliku [oauth.go](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/backend/handlers/oauth.go). Przycisk przekierowujący znajduje się w widoku [Login.js](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/frontend/src/components/Login.js).
+
+
+
+[EBiznes_zestaw8_40.webm](https://github.com/user-attachments/assets/5b01872a-4598-45b8-850b-5f95e47467a5)
+
+✅ **4.5** Wprowadzono dodatkową możliwość logowania za pomocą konta **GitHub OAuth2**. Konfiguracja oraz endpointy obsługujące wywołania zwrotne (callbacks) od GitHuba również zostały umieszczone w pliku [oauth.go](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/backend/handlers/oauth.go).
+
+✅ **5.0** Spełniono restrykcyjny wymóg zapisywania danych logowania OAuth2 wyłącznie po stronie serwera. Frontend nie komunikuje się bezpośrednio z dostawcami tożsamości. Serwer Go (w pliku [oauth.go](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_8/backend/handlers/oauth.go)) samodzielnie odpytuje API Google/GitHuba o adres e-mail, zapisuje użytkownika do bazy danych, a następnie przekierowuje klienta do aplikacji React wraz z jednorazowym parametrem sesyjnym.
+
+[EBiznes_zest8_45.webm](https://github.com/user-attachments/assets/56ec1de2-6152-415a-8eef-f32e25ff871a)
+
+
+
+
+[Link do całego zadania 8](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_8)
 
 
 -----------------------------------------

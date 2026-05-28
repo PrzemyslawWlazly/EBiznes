@@ -133,7 +133,7 @@ Zadanie 6
 -----------------------------------------
 # Zadanie 7: Quality Assurance & SonarCloud
 
-# Analiza SonarCloud dotyczy całego folderu EBiznes (bugs and code smells) - poprawki dotyczyły aplikacji: zadanie_6 (najnowszej wersji sklepu) - rozwiązane w folderze zestaw_7
+# Analiza SonarCloud dotyczy całego folderu EBiznes (bugs and code smells) - poprawki dotyczyły aplikacji: zadanie_6 (najnowszej wersji sklepu). Poprawiony zestaw_6 znajduje się w folderze zestaw_7
 
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=PrzemyslawWlazly_EBiznes&metric=bugs)](https://sonarcloud.io/dashboard?id=PrzemyslawWlazly_EBiznes)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=PrzemyslawWlazly_EBiznes&metric=code_smells)](https://sonarcloud.io/dashboard?id=PrzemyslawWlazly_EBiznes)

@@ -131,6 +131,30 @@ Zadanie 6
 
 
 -----------------------------------------
+# Zadanie 7: Quality Assurance & SonarCloud
+
+
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=PrzemyslawWlazly_EBiznes&metric=bugs)](https://sonarcloud.io/dashboard?id=PrzemyslawWlazly_EBiznes)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=PrzemyslawWlazly_EBiznes&metric=code_smells)](https://sonarcloud.io/dashboard?id=PrzemyslawWlazly_EBiznes)
+
+✅ **3.0** Dodano linter `golangci-lint` do kodu aplikacji serwerowej. Narzędzie zostało zintegrowane z systemem kontroli wersji poprzez skrypt `pre-commit` (Git Hooks), który automatycznie skanuje i blokuje zapisywanie kodu niespełniającego standardów.
+
+✅ **3.5** Wyeliminowano wszystkie błędy (Bugs) w kodzie na platformie SonarCloud, w tym krytyczne błędy składniowe JSX w plikach konfiguracyjnych frontendu w React.
+
+✅ **4.0** Zrefaktoryzowano kod w celu usunięcia tzw. zapaszków (Code Smells). Poprawiono m.in. użycie przestarzałych metod w JavaScripcie, dodano walidację `PropTypes`, naprawiono pętle `.map()` z indeksami oraz poprawiono składnię wyrażeń regularnych w testach Cypressa.
+
+✅ **4.5** Załatano wszystkie podatności i błędy bezpieczeństwa (Vulnerabilities). Wygenerowano brakujący plik `go.sum` (za pomocą `go mod tidy`), stabilizując drzewo zależności kryptograficznych na backendzie.
+
+✅ **5.0** Osiągnięto wynik 0 bugów, 0 zapaszków i 0 podatności dla obu warstw aplikacji (serwerowej w Go i klienckiej w React) w analityce chmurowej SonarCloud. Zaktualizowano komentarze w kodzie.
+
+[Link do całego zadania 7](https://github.com/PrzemyslawWlazly/EBiznes/tree/main/zestaw_7)
+
+
+<img width="1611" height="897" alt="obraz" src="https://github.com/user-attachments/assets/255b6a40-bd54-4d28-be81-7907e6c35b74" />
+<img width="1598" height="951" alt="obraz" src="https://github.com/user-attachments/assets/bb1e9017-026a-4223-a2a7-85cf4729580e" />
+<img width="1598" height="951" alt="obraz" src="https://github.com/user-attachments/assets/a99f3298-6296-4416-a267-22e2c344a24a" />
+<img width="1598" height="951" alt="obraz" src="https://github.com/user-attachments/assets/94c9a902-be4b-49ae-823c-e950c4bd39b8" />
+<img width="1598" height="951" alt="obraz" src="https://github.com/user-attachments/assets/7915fd93-34ff-48f9-80df-2539d46011dd" />
 
 
 

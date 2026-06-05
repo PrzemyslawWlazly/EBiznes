@@ -208,6 +208,14 @@ Zadanie 6
 * [Konfiguracja Gradle bota: build.gradle.kts](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/discord-bot/build.gradle.kts)
 * [Połączenie usług przez Docker Compose](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/docker-compose.yml)
 
+
+
+
+[Ebiznes_zestaw9_35.webm](https://github.com/user-attachments/assets/d6172482-13f0-463f-90b9-fe7c29b828b9)
+
+
+
+
 ✅ **4.0 Stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy**
 * [Listy `CONVERSATION_OPENINGS` i `CONVERSATION_CLOSINGS`: main.py](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/gpt-service/app/main.py)
 * [Endpoint pokazujący otwarcia i zamknięcia: `/conversation-parts`](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/gpt-service/app/main.py)
@@ -217,6 +225,9 @@ Zadanie 6
 * [Funkcja sprawdzająca temat pytania `is_shop_related`: main.py](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/gpt-service/app/main.py)
 * [Endpoint pokazujący słowa filtra: `/topic-filter`](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/gpt-service/app/main.py)
 * [Szybkie odpowiedzi sklepowe z katalogu produktów: main.py](https://github.com/PrzemyslawWlazly/EBiznes/blob/main/zestaw_9/gpt-service/app/main.py)
+
+[Ebiznes_zest9_45.webm](https://github.com/user-attachments/assets/d1fc5b4f-428d-4770-bea5-7b402d91881f)
+
 
 ❌ **5.0 Filtrowanie odpowiedzi po sentymencie**
 * *(Nie zrealizowano)*

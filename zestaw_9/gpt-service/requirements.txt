@@ -1,0 +1,6 @@
+# FastAPI udostepnia endpointy /chat, /products i /health.
+fastapi==0.115.6
+# httpx sluzy do komunikacji HTTP z OpenAI albo Ollama.
+httpx==0.28.1
+# uvicorn uruchamia aplikacje FastAPI jako serwer ASGI.
+uvicorn[standard]==0.34.0

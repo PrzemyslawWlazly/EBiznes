@@ -1,0 +1,36 @@
+<!doctype html> <!-- Deklarujemy dokument HTML5 dla przegladarki. -->
+<html lang="pl"> <!-- Ustawiamy jezyk strony na polski. -->
+  <head> <!-- Sekcja head zawiera metadane i linki do zasobow. -->
+    <meta charset="utf-8" /> <!-- Ustawiamy kodowanie UTF-8 dla polskich znakow. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Dostosowujemy widok do urzadzen mobilnych. -->
+    <title>Asystent sklepu</title> <!-- Tytul karty w przegladarce. -->
+    <link rel="stylesheet" href="/style.css" /> <!-- Podlaczamy arkusz stylow CSS serwowany przez FastAPI. -->
+  </head> <!-- Konczymy sekcje head. -->
+  <body> <!-- Sekcja body zawiera widoczna czesc aplikacji. -->
+    <main class="app-shell"> <!-- Glowny kontener uklada panel sklepu i panel czatu. -->
+      <section class="shop-panel"> <!-- Lewy panel pokazuje kontekst sklepu. -->
+        <div> <!-- Kontener na naglowek panelu sklepu. -->
+          <p class="eyebrow">Zestaw 9</p> <!-- Krotka etykieta projektu. -->
+          <h1>Asystent sklepu</h1> <!-- Glowny tytul aplikacji frontendowej. -->
+        </div> <!-- Konczymy kontener naglowka. -->
+        <ul id="products" class="product-list" aria-label="Produkty"></ul> <!-- Lista produktow wypelniana przez app.js. -->
+      </section> <!-- Konczymy panel sklepu. -->
+
+      <section class="chat-panel" aria-label="Chat"> <!-- Prawy panel zawiera rozmowe z asystentem. -->
+        <div id="messages" class="messages"></div> <!-- Kontener na wiadomosci uzytkownika i asystenta. -->
+        <form id="chat-form" class="composer"> <!-- Formularz wysylajacy pytanie do backendu. -->
+          <textarea
+            id="message-input"
+            name="message"
+            rows="3"
+            placeholder="Zapytaj o produkt, prezent albo dostepny asortyment..."
+            required
+          ></textarea> <!-- Pole tekstowe, w ktorym uzytkownik wpisuje pytanie. -->
+          <button type="submit">Wyslij</button> <!-- Przycisk uruchamiajacy zapytanie do /chat. -->
+        </form> <!-- Konczymy formularz czatu. -->
+      </section> <!-- Konczymy panel czatu. -->
+    </main> <!-- Konczymy glowny kontener aplikacji. -->
+
+    <script src="/app.js"></script> <!-- Podlaczamy logike frontendu w JavaScript. -->
+  </body> <!-- Konczymy widoczna czesc dokumentu. -->
+</html> <!-- Konczymy dokument HTML. -->

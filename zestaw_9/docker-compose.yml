@@ -1,0 +1,38 @@
+services:
+  # Definiujemy uslugi skladajace sie na projekt zestaw_9.
+
+  gpt-service:
+    # Pierwsza usluga to Pythonowy backend FastAPI z frontendem JS.
+    build: ./gpt-service
+    # Budujemy obraz z katalogu gpt-service.
+    network_mode: host
+    # Uzywamy sieci hosta, aby kontener widzial lokalna Ollame pod 127.0.0.1:11434.
+    environment:
+      # Zmienne srodowiskowe konfiguruja providerow AI.
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://127.0.0.1:11434}
+      # Domyslnie kontener laczy sie z Ollama uruchomiona lokalnie na hoscie.
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen2.5:0.5b}
+      # Domyslny bardzo maly model Ollamy do projektu pokazowego.
+      OLLAMA_NUM_PREDICT: ${OLLAMA_NUM_PREDICT:-120}
+      # Limit generowanych tokenow, aby odpowiedzi byly krotkie i szybkie.
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      # Opcjonalny klucz OpenAI; jesli pusty, serwis uzywa Ollamy.
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      # Domyslny model OpenAI, gdy ustawimy OPENAI_API_KEY.
+
+  discord-bot:
+    # Druga usluga to bot Discord skopiowany i rozszerzony z zestaw_3.
+    build: ./discord-bot
+    # Budujemy obraz z katalogu discord-bot.
+    network_mode: host
+    # Bot tez uzywa sieci hosta, aby laczyc sie z gpt-service po 127.0.0.1:8000.
+    depends_on:
+      # Bot powinien startowac po backendzie GPT.
+      - gpt-service
+      # Docker Compose uruchomi gpt-service przed botem.
+    environment:
+      # Zmienne wymagane przez bota.
+      DISCORD_TOKEN: ${DISCORD_TOKEN}
+      # Token Discord musi zostac ustawiony na hoscie przed startem.
+      GPT_SERVICE_URL: http://127.0.0.1:8000
+      # W sieci hosta bot laczy sie z gpt-service przez localhost.

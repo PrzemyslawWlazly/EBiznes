@@ -1,0 +1,10 @@
+# Ignorujemy cache Pythona generowany przy uruchamianiu aplikacji.
+__pycache__/
+# Ignorujemy skompilowane pliki Pythona.
+*.py[cod]
+# Ignorujemy lokalne srodowisko wirtualne Pythona.
+.venv/
+# Ignorujemy pliki ze zmiennymi srodowiskowymi i sekretami.
+.env
+# Ignorujemy plik tokenu Discord z poprzedniego zestawu.
+token_dla_discord.txt

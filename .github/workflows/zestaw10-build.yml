@@ -1,0 +1,45 @@
+name: Zestaw 10 - Build
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "zestaw_10/**"
+      - ".github/workflows/zestaw10-build.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "zestaw_10/**"
+      - ".github/workflows/zestaw10-build.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zestaw10-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Docker images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate Docker Compose configuration
+        run: docker compose -f zestaw_10/docker-compose.yml config
+
+      - name: Build backend image
+        run: docker build --tag zestaw10-backend:ci zestaw_10/backend
+
+      - name: Build frontend image
+        run: |
+          docker build \
+            --build-arg REACT_APP_API_URL=http://localhost:8080 \
+            --tag zestaw10-frontend:ci \
+            zestaw_10/frontend

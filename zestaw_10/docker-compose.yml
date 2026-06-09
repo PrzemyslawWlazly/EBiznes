@@ -1,0 +1,14 @@
+services: # Rozpoczynamy listę usług uruchamianych wspólnie dla frontendu i backendu.
+  backend: # Definiujemy usługę aplikacji serwerowej napisanej w Go.
+    build: ./backend # Budujemy obraz backendu na podstawie pliku backend/Dockerfile.
+    ports: # Otwieramy listę mapowań portów dla backendu.
+      - "8080:8080" # Udostępniamy API backendu na porcie 8080 hosta i kontenera.
+  frontend: # Definiujemy usługę aplikacji klienckiej napisanej w React.
+    build: # Konfigurujemy kontekst oraz argumenty produkcyjnego budowania frontendu.
+      context: ./frontend # Budujemy obraz na podstawie plików z katalogu frontend.
+      args: # Przekazujemy adres API do procesu kompilowania aplikacji React.
+        REACT_APP_API_URL: ${REACT_APP_API_URL:-http://localhost:8080} # Lokalnie używamy portu 8080, a w chmurze publicznego adresu backendu.
+    ports: # Otwieramy listę mapowań portów dla frontendu.
+      - "3000:10000" # Udostępniamy Nginx z kontenera na lokalnym porcie 3000.
+    depends_on: # Definiujemy zależność startową między frontendem i backendem.
+      - backend # Uruchamiamy backend przed frontendem, aby API było dostępne dla aplikacji klienckiej.

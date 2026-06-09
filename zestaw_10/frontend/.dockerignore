@@ -1,0 +1,11 @@
+# Ignorujemy lokalny folder paczek, ponieważ kontener instaluje zależności samodzielnie.
+node_modules
+
+# Ignorujemy lokalny build produkcyjny, aby nie powiększać kontekstu budowania obrazu.
+build
+
+# Ignorujemy historię Gita, ponieważ nie jest potrzebna do działania aplikacji w kontenerze.
+.git
+
+# Ignorujemy logi npm, które nie są potrzebne w obrazie Dockera.
+npm-debug.log*

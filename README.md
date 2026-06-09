@@ -243,7 +243,7 @@ ollama serve
 -----------------------------------------
 
 
-## Zadanie 9: Chmura, Docker i GitHub Actions
+## Zadanie 10: Chmura, Docker i GitHub Actions
 
 [Link do głównego folderu projektu](https://github.com/PrzemyslawWlazly/Projektowanie-Obiektowe/tree/main/zestaw_9)
 
